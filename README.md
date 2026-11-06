@@ -18,7 +18,7 @@ ArcSide needs macOS 15 or later and Aside. It has two parts, and you need both.
 
 Aside starts the app whenever the extension connects and stops it when Aside quits, so there is nothing to launch by hand after setup. The setup window opens again from Settings > General > Set Up….
 
-Aside's vertical tab strip opens at the same left edge as the sidebar. So while you use ArcSide, it sets Aside's Tab position to Horizontal, once Aside has quit, and the change shows the next time Aside starts. It sets it back to Vertical, again once Aside has quit, when you remove the extension, turn off Settings > General > Show Aside's tabs on top, or uninstall ArcSide. If you set Vertical again in Aside yourself, ArcSide leaves it alone.
+Keep Aside's Tab position on Vertical. Aside then shows no tabs of its own, and its tab strip would float at the same left edge as the sidebar. To stop that, ArcSide asks for Accessibility access in macOS's Privacy & Security settings. While ArcSide runs, it holds back the pointer moves that macOS sends to Aside within 12 points of a window's left edge, so only the sidebar opens there. Quit ArcSide or turn off Settings > General > Open at the window's left edge, and Aside works as before.
 
 ## Updates
 
@@ -26,7 +26,7 @@ The extension updates from the Chrome Web Store. The app checks this page's rele
 
 ## Uninstall
 
-In ArcSide's Settings > About, click Uninstall ArcSide…. It sets Aside's Tab position back to Vertical if ArcSide set it to Horizontal, removes the files that let Aside start the app and the app's settings, then moves the app to the Trash. Then remove the extension in Aside's `chrome://extensions`.
+In ArcSide's Settings > About, click Uninstall ArcSide…. It removes the files that let Aside start the app and the app's settings, then moves the app to the Trash. Then remove the extension in Aside's `chrome://extensions`.
 
 ## Privacy
 

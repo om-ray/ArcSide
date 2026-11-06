@@ -25,7 +25,7 @@ Session storage is cleared when Aside quits. Removing the extension removes all 
 
 The app saves only its settings on your Mac: appearance, motion, sidebar width, whether opening at the edge, swiping and the menu bar icon are on, and which sections and bookmark folders you left open. It keeps your tabs and bookmarks in memory only while it runs.
 
-The app changes one Aside setting. While a profile uses the ArcSide extension and Aside shows its tabs vertically, the app sets Aside's Tab position to Horizontal in Aside's `Local State` file, so Aside's tab strip doesn't open at the left edge together with the sidebar. It changes that one value only while Aside is not running, and it remembers in its own settings that it changed it. It sets the Tab position back to Vertical when no profile uses the extension any more, when you turn off "Show Aside's tabs on top" in ArcSide's Settings, or when you uninstall ArcSide. If you set it back to Vertical in Aside yourself, the app leaves it alone. To read whether a profile uses the extension, the app reads the profile's list of installed extensions; it keeps nothing from it.
+The app changes no Aside settings. With your permission in Privacy & Security > Accessibility, it holds back the pointer moves that macOS sends to Aside within 12 points of an Aside window's left edge, so Aside's own tab strip doesn't open there together with the sidebar. To find those edges it reads where Aside's windows are on screen. It reads no keys, no clicks and nothing on the page, and keeps nothing from these events.
 
 ## Where data goes
 
